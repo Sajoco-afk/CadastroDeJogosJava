@@ -1,31 +1,35 @@
 # 🎮 Cadastro de Jogos em Java
 
-Projeto simples desenvolvido em **Java** com o objetivo de praticar conceitos básicos de **Programação Orientada a Objetos (POO)**.
+Projeto simples desenvolvido em **Java** com o objetivo de praticar conceitos básicos de **Programação Orientada a Objetos (POO)**, incluindo a criação e utilização de classes e objetos.
 
 ## 📚 Sobre o projeto
 
-O programa cria objetos da classe `Jogo` e atribui informações como:
+O programa cria diferentes objetos da classe `Jogo` e atribui informações como:
 
 - 🎮 Nome do jogo
 - 🏷️ Categoria
 - 💰 Valor
 
-Após criar os objetos, o programa exibe as informações no console.
+Depois, as informações de cada objeto são exibidas no console.
 
 ## 🛠️ Tecnologias utilizadas
 
 - Java
 - Programação Orientada a Objetos (POO)
+- Prompt de Comando (CMD)
 
 ## 💻 Conceitos praticados
 
-Neste projeto foram utilizados conceitos importantes da linguagem Java:
+Neste projeto foram praticados conceitos importantes da linguagem Java:
 
 - Criação de classes
 - Criação de objetos
 - Atributos
-- Instanciação de objetos
-- Atribuição de valores
+- Instanciação de objetos com `new`
+- Atribuição de valores aos atributos
+- Utilização de múltiplas classes
+- Compilação de arquivos Java
+- Execução de programas pelo terminal
 - Exibição de informações no console
 
 ## 📂 Estrutura do projeto
@@ -37,45 +41,82 @@ CadastroDeJogosJava
 └── Jogo.java
 ```
 
-## 🚀 Como executar
+### `Primaryclass.java`
 
-1. Clone este repositório:
+Contém o método `main`, responsável por criar os objetos `Jogo` e exibir suas informações.
+
+### `Jogo.java`
+
+Representa a classe `Jogo`, contendo os atributos utilizados pelos objetos:
+
+```java
+public class Jogo {
+
+    String nome;
+    String categoria;
+    double valor;
+
+}
+```
+
+## ⚙️ Como compilar o projeto
+
+Como o projeto possui mais de uma classe, é necessário compilar os arquivos Java:
 
 ```bash
-git clone https://github.com/Sajoco-afk/-CadastroDeJogosJava.git
+javac Primaryclass.java Jogo.java
 ```
 
-2. Abra o projeto em uma IDE compatível com Java.
-
-3. Execute a classe:
+Esse comando gera os arquivos compilados:
 
 ```text
-Primaryclass.java
+Primaryclass.class
+Jogo.class
 ```
+
+Também é possível compilar todos os arquivos Java da pasta utilizando:
+
+```bash
+javac *.java
+```
+
+## ▶️ Como executar
+
+Após a compilação, execute a classe principal:
+
+```bash
+java Primaryclass
+```
+
+> **Observação:** o comando `javac` é utilizado para compilar arquivos `.java`, enquanto o comando `java` executa a classe principal já compilada.
 
 ## 📝 Exemplo de funcionamento
 
-O programa cria diferentes jogos e exibe suas informações no console:
+O programa exibe informações semelhantes a estas no console:
 
 ```text
 Jogo 01: Assassins Creed
-Categoria Jogo 01: Mundo Aberto
-Valor do Jogo 01: 159.90
+Categoria: Mundo Aberto
+Valor: 159.9
 
 Jogo 02: Counter Strike
-Categoria Jogo 02: FPS
-Valor do Jogo 02: 60.00
+Categoria: FPS
+Valor: 60.0
 
 Jogo 03: God of War
-Categoria Jogo 03: Ação
-Valor do Jogo 03: 300.00
+Categoria: Ação
+Valor: 300.0
 ```
+
+## 🚀 Objetivo
+
+Este projeto foi desenvolvido como exercício de estudo para compreender melhor como diferentes classes trabalham juntas em um programa Java.
 
 ## 👨‍💻 Autor
 
 Desenvolvido por **Samuel Covalski**.
 
-GitHub: [Sajoco-afk](https://github.com/Sajoco-afk)
+GitHub: `Sajoco-afk`
 
 ---
 
